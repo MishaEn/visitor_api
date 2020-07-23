@@ -15,7 +15,7 @@ class CreateVisitorsTable extends Migration
     {
         Schema::create('visitors', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('event_id')->index();
+
             $table->string('first_name');
             $table->string('last_name');
             $table->string('email');
@@ -23,7 +23,9 @@ class CreateVisitorsTable extends Migration
         });
 
         Schema::table('visitors', function(Blueprint $table){
-           $table->foreign('event_id')->references('id')->on('events')->onDelete('cascade');
+            $table->bigInteger('event_id');
+            $table->index('event_id');
+            $table->foreign('event_id')->references('id')->on('events')->onDelete('cascade');
         });
     }
 
