@@ -1,24 +1,46 @@
-# Lumen PHP Framework
+#Задание
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+Михаил, добрый день!
+Получила Ваш отклик на нашу вакансию. 
+Мы рассматриваем кандидатов через тестовое задание, чтобы понимать Ваш уровень перед техническим собеседованием.
+Будете готовы его выполнить?
 
-## Official Documentation
+ 
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+##Тестовое задание: 
 
-## Contributing
+Создать API-приложение для управления участниками мероприятия.
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Участник содержит поля имя/фамилия/email и привязан к мероприятию
+Мероприятие содержит поля название/дата проведения/город (для них api не требуется)
 
-## Security Vulnerabilities
+##Возможности
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+1.    Добавлять/получать/изменять/удалять участников через http запрос
+2.    Фильтрация данных при запросе (возвращать только участников определенного мероприятия)
 
-## License
+##Требования
 
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+1.    Использование фреймворка lumen/laravel (можно использовать любые дополнительные пакеты)
+2.    Доступ к API закрыт напрямую
+3.    Должны быть unit тесты (все покрывать необязательно)
+4.    Формат возвращаемых данных - json
+5.    Мероприятия уже существуют в базе при запуске приложения
+6.    При успешном создании нового участника эмулируется отправка email через очередь (можно писать в лог)
+7.    Участник уникален по email
+
+##Результат
+Ссылка на git-репозиторий, содержащий приложение, инструкции для его запуска, инструкции по работе с API
+
+Дополнительное задание (необязательно)
+Приложение и его составляющие запускаются внутри docker контейнеров
+
+
+ 
+
+ 
+
+ 
+
+
