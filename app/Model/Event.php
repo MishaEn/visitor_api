@@ -3,8 +3,14 @@
 
 namespace App\Model;
 
-
-class Event
+use Illuminate\Database\Eloquent\Model;
+class Event extends Model
 {
+    protected  $fillable = ['name', 'city', 'start_date'];
 
+    protected  $hidden = [];
+
+    public function visitor(){
+        $this->hasMany('App\Model\Visitor');
+    }
 }
